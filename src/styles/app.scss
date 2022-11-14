@@ -1,16 +1,27 @@
+//GLOBAL STYLING
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  background: #f4fbff;
+  background: #f4f7f8;
   font-family: "DM Sans", sans-serif;
+}
+button {
+  cursor: pointer;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 16px;
 }
 
 // flex styling
 .flex {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -21,7 +32,18 @@ body {
   align-items: flex-start;
 }
 
+.orange-btn {
+  color: white;
+  padding: 18px 24px;
+  font-size: 16px;
+  border: none;
+  background: #f86338;
+  border-radius: 8px;
+}
+
 /* IMPORTING SCSS PARTIALS OF DIFFERENT COMPONENTS */
 @import "./nav";
 @import "./firstSection";
 @import "./premiumCollection";
+@import "./topItems";
+@import "./story";

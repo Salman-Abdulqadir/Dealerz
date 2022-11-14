@@ -1,5 +1,8 @@
 import React from "react";
 
+// IMPORTING COMPONENT
+import CollectionCard from "./CollectionCard";
+
 export default function PremiumCollection() {
   return (
     <section className="premium-collection">
@@ -13,7 +16,15 @@ export default function PremiumCollection() {
         <li>Skirt</li>
         <li>T-shirt</li>
       </ul>
-      <div className="collection"></div>
+      <div className="collection">
+        <CollectionCard />
+        <CollectionCard />
+        <CollectionCard />
+        <CollectionCard />
+        <CollectionCard />
+        <CollectionCard />
+      </div>
+      <button className="orange-btn"> Find out More</button>
     </section>
   );
 }

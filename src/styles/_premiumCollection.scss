@@ -1,5 +1,5 @@
 .premium-collection {
-  margin: 5rem 9rem;
+  margin: 6rem;
   h2 {
     text-align: center;
     font-weight: 700;
@@ -9,15 +9,55 @@
     color: #11142d;
   }
   .filters {
-    margin: 3rem 0rem;
+    margin: 3rem 5rem;
     list-style: none;
     font-weight: 700;
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0.005em;
     color: #9a9ab0;
-    .active{
-        color: #F86338;
+    .active {
+      color: #f86338;
     }
+  }
+  .orange-btn {
+    display: block;
+    margin: 5rem auto;
+  }
+}
+.collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+.collection-card {
+  padding: 2rem;
+  padding-bottom: 4rem;
+  background-color: white;
+  width: 400px;
+  height: 640px;
+  .image {
+    height: 20rem;
+    flex: 1;
+  }
+  p {
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #9a9ab0;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 48px;
+    margin: 1rem 0rem;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+  }
+  button {
+    border: none;
+    padding: 10px;
+    background: #f86338;
+    border-radius: 28px;
   }
 }
