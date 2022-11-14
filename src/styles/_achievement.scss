@@ -1,0 +1,37 @@
+.achievement {
+  h2 {
+    text-align: center;
+  }
+  .logos {
+    width: 85%;
+    margin: 4rem auto;
+  }
+}
+.achievement-card {
+  background-color: white;
+  padding: 2rem;
+  width: 80%;
+  margin: auto;
+  height: 25rem;
+}
+.image {
+  width: 20rem;
+  height: 20rem;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.achievement-info {
+  flex: 1;
+  margin-left: 4rem;
+  h2 {
+    color: #f86338;
+    text-align: left;
+  }
+  .achievement-description {
+    width: 70%;
+    margin: 2rem 0rem;
+  }
+}

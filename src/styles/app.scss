@@ -11,11 +11,17 @@ body {
 button {
   cursor: pointer;
 }
+h2 {
+  font-size: 48px;
+}
 h3 {
   font-size: 24px;
 }
 h4 {
   font-size: 16px;
+}
+p {
+  color: #9a9ab0;
 }
 
 // flex styling
@@ -47,3 +53,6 @@ h4 {
 @import "./premiumCollection";
 @import "./topItems";
 @import "./story";
+@import "./achievement";
+@import "./insights";
+@import "./newsletter";

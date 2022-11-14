@@ -3,10 +3,10 @@ import React from "react";
 // IMPORTING COMPONENT
 import CollectionCard from "./CollectionCard";
 
-export default function PremiumCollection() {
+export default function PremiumCollection({ title }) {
   return (
     <section className="premium-collection">
-      <h2>Our Premium Collection</h2>
+      <h2>{title}</h2>
       <ul className="filters flex">
         <li className="active">All Products</li>
         <li>Coats & jackets</li>

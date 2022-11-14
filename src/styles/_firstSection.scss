@@ -3,6 +3,10 @@
   min-height: 70vh;
   display: flex;
   justify-content: flex-end;
+  overflow: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   background: #ffffff;
   .flex-column {

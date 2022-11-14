@@ -3,7 +3,9 @@ import React from "react";
 //IMPORTING IMAGES
 import ellipse from "../images/Ellipse.png";
 
-export default function FirstSection() {
+export default function FirstSection({ title, btn_status }) {
+  const title_array = title.split(" ");
+
   return (
     <section className="first-section">
       <div className="vectors">
@@ -15,13 +17,26 @@ export default function FirstSection() {
       </div>
       <div className="flex-column">
         <h2>
-          Your Premium <br /> Sound, unpluged!
+          {title_array[0] + " " + title_array[1]}
+          <br />
+          {title_array.map((element, index) => {
+            if (index > 1) return element + " ";
+            else return '';
+          })}
         </h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />{" "}
           Deserunt natus, accusamus ipsum qui molestias et!
         </p>
-        <button className="orange-btn">Find out more</button>
+
+        {/* RENDERING THE BUTTON ONLY IN THE HOME PAGE, AND THIS IS BY CHECKING THE "btn_status" */}
+        <>
+          {btn_status ? (
+            <button className="orange-btn">Find out more</button>
+          ) : (
+            ""
+          )}
+        </>
       </div>
     </section>
   );

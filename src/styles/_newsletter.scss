@@ -1,0 +1,23 @@
+.news-letter {
+  border-radius: 10px;
+  width: 80%;
+  margin: 3rem auto;
+  padding: 4rem;
+  background-color: white;
+  text-align: center;
+  p {
+    margin: 2rem 0rem;
+  }
+  .newsletter-input {
+    input {
+      outline: none;
+      background-color: #f4f7f8;
+      width: 30rem;
+      padding: 20px;
+      border: none;
+    }
+    .orange-btn {
+      padding: 18px;
+    }
+  }
+}

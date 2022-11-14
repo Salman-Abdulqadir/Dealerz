@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Story() {
   return (
-    <section className="story">
+    <section className="story flex">
       <div className="image"></div>
       <div className="story-content">
         <h2>
