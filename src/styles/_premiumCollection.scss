@@ -1,0 +1,23 @@
+.premium-collection {
+  margin: 5rem 9rem;
+  h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #11142d;
+  }
+  .filters {
+    margin: 3rem 0rem;
+    list-style: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #9a9ab0;
+    .active{
+        color: #F86338;
+    }
+  }
+}

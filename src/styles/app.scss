@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f4fbff;
+  font-family: "DM Sans", sans-serif;
+}
+
+// flex styling
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* IMPORTING SCSS PARTIALS OF DIFFERENT COMPONENTS */
+@import "./nav";
+@import "./firstSection";
+@import "./premiumCollection";
