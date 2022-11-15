@@ -48,9 +48,9 @@ function Shop() {
 
 const Products = styled.div`
   display: grid;
+  flex: 1;
   height: 120vh;
   overflow-y: scroll;
-
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   row-gap: 2rem;
   column-gap: 2rem;
@@ -60,7 +60,7 @@ const StyledShop = styled.div`
   width: 90%;
   margin: 5rem auto;
   display: flex;
-  justify-content: space-between;
+  gap: 5rem;
   flex-wrap: wrap;
 `;
 

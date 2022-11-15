@@ -20,7 +20,7 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
-    flex: 0.8;
+    flex: 1;
     list-style-type: style none;
     span {
       margin-left: 1rem;
@@ -28,16 +28,18 @@ nav {
   }
 }
 .links {
+  
+  background: #f4f7f8;
   display: flex;
   flex-wrap: wrap;
   padding: 20px 94px;
 
   ul {
-    flex: 1;
+    flex: 1.5;
     list-style: none;
   }
   .search-input {
-    flex: 2;
+    flex: 1;
     background-color: #ffffff;
     color: #9a9ab0;
     padding: 10px 15px;
@@ -52,6 +54,6 @@ nav {
     }
   }
   .icons {
-    flex: 1;
+    flex: 0.8;
   }
 }

@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <div>
+    <div className="navigation">
       <nav>
         <h1>
           <Logo to={"/"}>Dealerz.</Logo>
@@ -39,10 +39,14 @@ const Nav = () => {
             <StyledLink to={"/shop"}>Shop</StyledLink>
           </li>
           <li>
-            <StyledLink to={"gallery"}>gallery</StyledLink>
+            <StyledLink to={"gallery"}>Gallery</StyledLink>
           </li>
-          <li>About</li>
-          <li>Blog</li>
+          <li>
+            <StyledLink to={"/detail"}>Product Detail</StyledLink>
+          </li>
+          <li>
+            <StyledLink to={"/cart"}>Cart</StyledLink>
+          </li>
         </ul>
         <div className="search-input flex">
           <input type="text" placeholder="Search what you need" />

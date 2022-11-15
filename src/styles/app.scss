@@ -10,6 +10,7 @@ body {
 }
 button {
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 h2 {
   font-size: 48px;
@@ -23,7 +24,9 @@ h4 {
 p {
   color: #9a9ab0;
 }
-
+.orange-text {
+  color: #f86338;
+}
 // flex styling
 .flex {
   display: flex;
@@ -42,8 +45,16 @@ p {
   color: white;
   padding: 18px 24px;
   font-size: 16px;
-  border: none;
+  border: 2px solid #f86338;
   background: #f86338;
+  border-radius: 8px;
+}
+.orange-outline-btn {
+  color: #f86338;
+  border: 2px solid #f86338;
+  padding: 18px 24px;
+  font-size: 16px;
+  background: white;
   border-radius: 8px;
 }
 
