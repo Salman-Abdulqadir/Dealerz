@@ -14,9 +14,22 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
 
 // REACT ROUTER
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Nav = () => {
+  let activeLink = useLocation();
+
+  //STYLING THE ACTIVE LINK
+  const checkActive = (path) => {
+    const style = {
+      background: "#F86338",
+      borderRadius: "10px",
+      color: "white",
+      padding: "10px",
+    };
+    return activeLink.pathname === path ? style : {};
+  };
+
   return (
     <div className="navigation">
       <nav>
@@ -36,16 +49,24 @@ const Nav = () => {
       <div className="links">
         <ul className="flex">
           <li>
-            <StyledLink to={"/shop"}>Shop</StyledLink>
+            <StyledLink style={checkActive("/shop")} to={"/shop"}>
+              Shop
+            </StyledLink>
           </li>
           <li>
-            <StyledLink to={"gallery"}>Gallery</StyledLink>
+            <StyledLink style={checkActive("/gallery")} to={"gallery"}>
+              Gallery
+            </StyledLink>
           </li>
           <li>
-            <StyledLink to={"/detail"}>Product Detail</StyledLink>
+            <StyledLink style={checkActive("/detail")} to={"/detail"}>
+              Product Detail
+            </StyledLink>
           </li>
           <li>
-            <StyledLink to={"/cart"}>Cart</StyledLink>
+            <StyledLink style={checkActive("/cart")} to={"/cart"}>
+              Cart
+            </StyledLink>
           </li>
         </ul>
         <div className="search-input flex">
@@ -67,6 +88,7 @@ const Nav = () => {
 };
 
 const StyledLink = styled(Link)`
+  transition: all 0.5s ease;
   text-decoration: none;
   color: black;
   cursor: pointer;

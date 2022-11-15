@@ -48,6 +48,7 @@ const StyledCartItem = styled.div`
   flex-wrap: wrap;
   gap: 2rem;
   min-width: 40rem;
+  margin-bottom: 2rem;
   .item-details {
     flex: 1;
     display: flex;
@@ -72,6 +73,8 @@ const StyledCartItem = styled.div`
     }
     .orange-outline-btn {
       margin-right: 1rem;
+      background: transparent;
+      border-width: 1px;
       padding: 10px 20px;
       font-size: 13px;
     }
