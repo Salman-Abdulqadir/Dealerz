@@ -50,6 +50,8 @@ const StyledCart = styled.div`
   width: 90%;
   margin: 5rem auto;
   display: flex;
+
+  flex-wrap: wrap;
   justify-content: space-between;
 `;
 export default Cart;

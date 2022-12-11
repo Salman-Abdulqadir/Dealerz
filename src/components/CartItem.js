@@ -47,7 +47,6 @@ const StyledCartItem = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  min-width: 40rem;
   margin-bottom: 2rem;
   .item-details {
     flex: 1;

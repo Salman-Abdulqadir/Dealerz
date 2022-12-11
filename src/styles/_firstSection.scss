@@ -8,13 +8,13 @@
   }
 
   background: #ffffff;
-  .first-section-title{
+  .hide{
+    overflow-y: hidden;
+  }
+  .first-section-title {
     align-items: flex-start;
     padding: 5rem;
     margin: auto 0px;
-    .orange-btn{
-      width: 50%;
-    }
   }
   h2 {
     font-weight: lighter;
@@ -68,3 +68,5 @@
     display: none;
   }
 }
+
+

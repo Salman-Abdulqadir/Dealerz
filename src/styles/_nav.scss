@@ -26,6 +26,7 @@
     }
   }
   .links {
+    overflow-x: hidden;
     background: #f4f7f8;
     flex-wrap: wrap;
     padding: 20px 94px;
@@ -70,7 +71,7 @@
     }
     .links {
       padding: 2rem;
-      width: 50%;
+      width: 80%;
       position: absolute;
       z-index: 2;
       top: 0;
@@ -86,10 +87,12 @@
         flex-direction: column;
         align-items: baseline;
       }
-      display: none;
+      transition: all 0.5s ease 0.3s;
+      transform: translateX(100%);
+      display: flex;
     }
     .active-links {
-      display: flex;
+      transform: translateX(0%);
     }
   }
 }

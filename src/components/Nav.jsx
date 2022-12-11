@@ -76,22 +76,30 @@ const Nav = () => {
         />
         <ul className="link-list flex">
           <li>
-            <StyledLink style={checkActive("/shop")} to={"/shop"}>
+            <StyledLink onClick={() => {
+            dispatch(hideNav());
+          }} style={checkActive("/shop")} to={"/shop"}>
               Shop
             </StyledLink>
           </li>
           <li>
-            <StyledLink style={checkActive("/gallery")} to={"gallery"}>
+            <StyledLink onClick={() => {
+            dispatch(hideNav());
+          }} style={checkActive("/gallery")} to={"gallery"}>
               Gallery
             </StyledLink>
           </li>
           <li>
-            <StyledLink style={checkActive("/detail")} to={"/detail"}>
+            <StyledLink onClick={() => {
+            dispatch(hideNav());
+          }} style={checkActive("/detail")} to={"/detail"}>
               Product Detail
             </StyledLink>
           </li>
           <li>
-            <StyledLink style={checkActive("/cart")} to={"/cart"}>
+            <StyledLink onClick={() => {
+            dispatch(hideNav());
+          }} style={checkActive("/cart")} to={"/cart"}>
               Cart
             </StyledLink>
           </li>

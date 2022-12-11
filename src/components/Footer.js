@@ -26,14 +26,15 @@ function Footer() {
 }
 
 const StyledFooter = styled.div`
+  min-height: 40vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   background: white;
-  padding: 3rem 5rem;
+  padding: 3rem;
   .image {
-    width: 20rem;
-    height: 20rem;
+    width: 100%;
+    height: 15rem;
     margin-right: 3rem;
     background-color: #e2e2ea;
   }
@@ -47,6 +48,7 @@ const StyledFooter = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1rem;
   }
   .buttons button {
     border: none;
@@ -55,7 +57,7 @@ const StyledFooter = styled.div`
     font-size: 10px;
     padding: 1rem;
     border-radius: 25px;
-    margin: 0rem 10px;
+    margin: 2rem 10px;
   }
 `;
 
