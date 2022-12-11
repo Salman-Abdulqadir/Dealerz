@@ -1,21 +1,11 @@
 .premium-collection {
-  margin: 6rem;
+  margin: 3rem 1rem;
   h2 {
     text-align: center;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 120%;
-    letter-spacing: 0.005em;
-    color: #11142d;
   }
   .filters {
-    margin: 3rem 5rem;
+    margin: 3rem;
     list-style: none;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 120%;
-    letter-spacing: 0.005em;
-    color: #9a9ab0;
     .active {
       color: #f86338;
     }
@@ -26,17 +16,17 @@
   }
 }
 .collection {
+  margin: 0rem 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  row-gap: 2rem;
-  column-gap: 2rem;
+  gap: 2rem;
+  place-items: center;
 }
 .collection-card {
   padding: 2rem;
   padding-bottom: 4rem;
   background-color: white;
-  width: 400px;
-  height: 640px;
+
   .image {
     height: 20rem;
     flex: 1;

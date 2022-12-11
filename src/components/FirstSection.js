@@ -15,7 +15,7 @@ export default function FirstSection({ title, btn_status }) {
         <div className=" circle circle-1"></div>
         <div className=" circle circle-2"></div>
       </div>
-      <div className="flex-column">
+      <div className="flex-column first-section-title">
         <h2>
           {title_array[0] + " " + title_array[1]}
           <br />

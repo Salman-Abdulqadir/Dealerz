@@ -1,5 +1,5 @@
 .insights {
-  width: 85%;
+  width: 80%;
   margin: 4rem auto;
   header {
     align-items: flex-end;
@@ -11,15 +11,11 @@
     margin-top: 3rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    row-gap: 3rem;
-    column-gap: 3rem;
+    gap: 2rem;
     .insight-card {
       .insight-image {
-        height: 25rem;
+        min-height: 25rem;
         background-color: #e2e2ea;
-      }
-      p {
-        margin: 2rem 0rem;
       }
     }
   }

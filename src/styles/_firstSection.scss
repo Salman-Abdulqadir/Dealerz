@@ -2,28 +2,24 @@
   position: relative;
   min-height: 70vh;
   display: flex;
-  justify-content: flex-end;
-  overflow: hidden;
+
   &::-webkit-scrollbar {
     display: none;
   }
 
   background: #ffffff;
-  .flex-column {
-    padding: 6rem 10rem;
+  .first-section-title{
+    align-items: flex-start;
+    padding: 5rem;
+    margin: auto 0px;
+    .orange-btn{
+      width: 50%;
+    }
   }
   h2 {
     font-weight: lighter;
-    font-size: 64px;
-    line-height: 120%;
-    letter-spacing: 0.003em;
+    font-size: calc(2rem + 2vw);
     color: #11142d;
-  }
-  p {
-    font-size: 16px;
-    line-height: 125%;
-    letter-spacing: 0.005em;
-    color: #515151;
   }
   .vectors {
     img {
@@ -31,20 +27,20 @@
     }
 
     .img1 {
-      left: 68px;
-      top: 50px;
+      right: 400px;
+      top: 200px;
     }
     .img2 {
-      width: 60px;
-      height: 60px;
-      left: 648.89px;
-      top: 450px;
+      max-width: 60px;
+      max-height: 60px;
+      left: 600px;
+      bottom: 40px;
       transform: rotate(-290deg);
     }
     .img3 {
       width: 40px;
       height: 40px;
-      left: 1227.88px;
+      right: 40px;
       top: 40px;
       transform: rotate(-290deg);
     }
@@ -56,14 +52,19 @@
     .circle-1 {
       width: 39px;
       height: 39px;
-      left: 579px;
+      left: 600px;
       top: 50px;
     }
     .circle-2 {
       width: 20px;
       height: 20px;
-      left: 1214px;
-      top: 400px;
+      right: 80px;
+      bottom: 40px;
     }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .vectors {
+    display: none;
   }
 }

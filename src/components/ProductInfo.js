@@ -200,7 +200,7 @@ const Description = styled.div`
     .main-img {
       background-color: #e2e2ea;
       width: 100%;
-      height: 70%;
+      min-height: 50vh;
     }
     .secondary-imgs,
     .review .secondary-imgs {
@@ -208,7 +208,7 @@ const Description = styled.div`
       justify-content: space-between;
       gap: 1rem;
       margin-top: 2rem;
-      height: 30%;
+      height: 20%;
       width: 100%;
 
       div {
