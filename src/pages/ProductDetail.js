@@ -1,8 +1,5 @@
 import React from "react";
 
-//IMPORT STYLED COMPONENTS
-import styled from "styled-components";
-
 //COMPONENTS
 import ProductInfo from "../components/ProductInfo";
 
