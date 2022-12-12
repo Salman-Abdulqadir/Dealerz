@@ -1,7 +1,6 @@
 .insights {
   min-height: 60vh;
-  width: 80%;
-  margin: 4rem auto;
+  margin: 4rem;
   header {
     align-items: flex-end;
   }
@@ -9,14 +8,14 @@
     color: #f86338;
   }
   .insight-cards {
-    margin-top: 3rem;
+    width: 100%;
+    margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 2rem;
     .insight-card {
-      height: 100%;
       .insight-image {
-        max-height: 25rem;
+        min-height: 25rem;
         background-color: #e2e2ea;
       }
     }

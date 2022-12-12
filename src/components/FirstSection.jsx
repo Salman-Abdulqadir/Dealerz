@@ -31,13 +31,13 @@ const FirstSection = ({ title, btn_status }) => {
         <Frame3 variants={slider}></Frame3>
         <Frame4 variants={slider}></Frame4>
       </motion.div>
-      <div className="vectors">
+      <motion.div variants={titleAnimation} className="vectors">
         <img src={ellipse} className="img1" alt="ellipse1" />
         <img src={ellipse} className="img2" alt="ellipse2" />
         <img src={ellipse} className="img3" alt="ellipse3" />
         <div className=" circle circle-1"></div>
         <div className=" circle circle-2"></div>
-      </div>
+      </motion.div>
       <div className="flex-column first-section-title">
         <div className="hide">
           <motion.h2 variants={titleAnimation}>

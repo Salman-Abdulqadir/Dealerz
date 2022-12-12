@@ -13,7 +13,7 @@ function Footer() {
           <p>privacy policy</p>
           <p>Terms and conditions</p>
         </div>
-        <h4>@2020 TanahAir Studio. All rights reserved.</h4>
+        <h4>@2022 All rights reserved.</h4>
       </div>
       <div className="buttons">
         <button>YT</button>
